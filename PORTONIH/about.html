@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biodata Fedora Ariefa Ardian</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f6f9;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      animation: fadeDown 1s ease-in-out;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    nav {
+      background: #333;
+      padding: 0.8rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ffce54;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    section {
+      background: white;
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      margin-bottom: 2rem;
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 1s ease, transform 1s ease;
+    }
+
+    section.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .about img {
+      width: 150px;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+
+    .about img:hover {
+      transform: scale(1.1);
+    }
+
+    .links a {
+      display: inline-block;
+      margin: 0.5rem;
+      text-decoration: none;
+      color: #2575fc;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .links a:hover {
+      color: #6a11cb;
+    }
+
+    .friends table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .friends th, .friends td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .friends th {
+      background: #2575fc;
+      color: white;
+    }
+
+    form {
+      margin-top: 1rem;
+      display: flex;
+      flex-direction: column;
+    }
+
+    form input, form textarea {
+      margin: 8px 0;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+
+    form input[type="submit"] {
+      background: #2575fc;
+      color: white;
+      cursor: pointer;
+      transition: 0.3s;
+      border: none;
+    }
+
+    form input[type="submit"]:hover {
+      background: #6a11cb;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #333;
+      color: white;
+      margin-top: 2rem;
+      animation: fadeUp 1.2s ease-in-out;
+    }
+
+    /* Animations */
+    @keyframes fadeDown {
+      from { opacity: 0; transform: translateY(-50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Fedora Ariefa Ardian</h1>
+    <p>Pendidikan Ilmu Komputer UPI 2024</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#friends">Teman</a></li>
+      <li><a href="#contact">Komentar</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <section class="about" id="about">
+      <center>
+        <img src="Fedora Ariefa A (7).JPG" alt="Foto Fedora">
+        <h2>Tentang Saya</h2>
+        <p>Hai everyone, kenalin nama aku <b>Fedora Ariefa Ardian</b> dari Pendidikan Ilmu Komputer UPI angkatan 2024.</p>
+        <p>Aku masuk UPI lewat jalur SNBP dengan ranking pararel 27 dan nilai rata rata 89.</p>
+        <p>Selama 3 semester ini aku sangat mendalami dan menikmati segala pelajaran dan pengalaman yang ada di Pendidikan Ilmu Komputer.</p>
+        <p>Aku berharap semoga bisa sukses di jurusan ini.</p>
+      </center>
+      <div class="links">
+        <a href="https://fedoraard.github.io/portofolio-Fedora-Ariefa-Ardian/" target="_blank">Portofolio</a>
+        <a href="https://www.instagram.com/fedoraard" target="_blank">Instagram</a>
+        <a href="https://wa.me/6287781710661">Kontak</a>
+      </div>
+    </section>
+
+    <section class="friends" id="friends">
+      <h2>Teman & Hobi</h2>
+      <table>
+        <tr>
+          <th>Nama</th>
+          <th>Hobi</th>
+        </tr>
+        <tr><td>Bismart</td><td>Balap liar</td></tr>
+        <tr><td>Ananta</td><td>Gym</td></tr>
+        <tr><td>Iqbal</td><td>Padel</td></tr>
+        <tr><td>Dewa</td><td>Coding</td></tr>
+        <tr><td>Ariel</td><td>Mukbang</td></tr>
+      </table>
+    </section>
+
+    <section class="contact-form" id="contact">
+      <h2>Komentar</h2>
+      <form>
+        <input type="text" placeholder="Nama" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Komentar" rows="5"></textarea>
+        <input type="submit" value="Kirim">
+      </form>
+    </section>
+  </div>
+
+  <footer>
+    <p>@fedoraard2025 | All Rights Reserved</p>
+    <img src="logofromS-removebg-preview.png" width="50" alt="ini logo aku">
+    
+  </footer>
+
+  <script>
+    // Scroll animation trigger
+    const sections = document.querySelectorAll("section");
+
+    const showOnScroll = () => {
+      const triggerBottom = window.innerHeight * 0.85;
+
+      sections.forEach(section => {
+        const boxTop = section.getBoundingClientRect().top;
+
+        if (boxTop < triggerBottom) {
+          section.classList.add("show");
+        }
+      });
+    };
+
+    window.addEventListener("scroll", showOnScroll);
+    window.addEventListener("load", showOnScroll);
+  </script>
+</body>
+</html>
