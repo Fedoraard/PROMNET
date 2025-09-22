@@ -1,0 +1,63 @@
+/* style.css */
+
+/* Section Title */
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+  color: #333;
+}
+
+/* Container */
+.about-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px;
+  background-color: #674c8f; /* abu-abu kehijauan mirip template */
+}
+
+/* Card */
+.about-card {
+  background: #f5f5f5;
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 300px;
+  transition: transform 0.3s;
+}
+.about-card:hover {
+  transform: translateY(-10px);
+}
+.about-card img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+.about-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: #444;
+  letter-spacing: 1px;
+}
+.about-card p {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid #444;
+  border-radius: 25px;
+  text-decoration: none;
+  color: #333;
+  transition: 0.3s;
+}
+.btn:hover {
+  background: #444;
+  color: white;
+}
