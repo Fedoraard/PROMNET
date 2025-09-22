@@ -1,0 +1,174 @@
+/* Style tombol menu */
+#menuBtn {
+  font-size: 18px;
+  background: linear-gradient( #5d3e11); 
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  position: fixed; /* biar selalu di kiri atas */
+  top: 10px;
+  left: 10px;
+  z-index: 1000;
+  border-radius: 4px;
+}
+
+/* Sidebar default tertutup */
+.sidebar {
+  height: 100%;
+  width: 0; /* tertutup */
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%); 
+  overflow-x: hidden;
+  transition: 0.3s;
+  padding-top: 60px;
+  z-index: 999;
+}
+
+/* Link di sidebar */
+.sidebar a {
+  display: block;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.sidebar a:hover {
+  background: #5d3e11;
+}
+
+/* Saat terbuka */
+.sidebar.open {
+  width: 200px;
+}
+
+/* Background body */
+body {
+  background: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+  font-family: Arial, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Sidebar link gaya lama di table (kalau masih ada) */
+td center a {
+  display: block;
+  margin: 10px 0;
+  padding: 5px;
+  color: #333;
+  background-color: #ffffff;
+  border-radius: 6px;
+  transition: 0.5s;
+}
+
+td center a:hover {
+  background-color: #5d3e11;
+  color: white;
+}
+
+/* Gambar profil */
+img {
+  border-radius: 50%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  margin: 10px 0;
+}
+
+.link-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.fancy-link {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%); 
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.fancy-link:hover {
+  transform: translateY(-5px) scale(1.05);
+  background: linear-gradient(135deg, #5d3e11);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+/* Tabel biodata */
+table {
+  border-collapse: collapse;
+  width: 80%;
+  margin: 20px auto;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #5d3e11;
+  color: #fff;
+}
+
+/* Form */
+form {
+  margin: 20px auto;
+  padding: 15px;
+  
+  width: 60%;
+}
+
+form input[type="text"],
+form input[type="email"] {
+  width: 80%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+form input[type="submit"] {
+  background-color: #5d3e11;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+  background-color: #f8cdda;
+}
+
+
+
+/* Footer */
+footer,
+th[colspan="1000"] {
+  background-color: #5d3e11;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+textarea{
+  resize: none ;
+  width: 81%;
+  height: 200px;
+  border-radius: 6px;
+  border: 6px solid white;
+  margin-top: 8px;
+  margin-bottom: 8px
+}
+

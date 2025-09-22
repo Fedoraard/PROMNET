@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeri Fedora</title>
+  <link rel="stylesheet" href="galeri.css">
+</head>
+<body>
+  <h1>Galeri Saya</h1>
+
+  <div class="gallery">
+    <img src="/images/Fedora Ariefa A (7).JPG" alt="Foto 1" onclick="openLightbox(this)">
+    <img src="/images/fedoSMA.jpg" alt="Foto 2" onclick="openLightbox(this)">
+    <img src="/images/fedordormokaku.jpg" alt="Foto 3" onclick="openLightbox(this)">
+    <img src="/images/pemandudor.jpg" alt="Foto 4" onclick="openLightbox(this)">
+  </div>
+
+  <div class="gallery">
+    <img src="/images/Fedora Ariefa A (7).JPG" alt="Foto 1" onclick="openLightbox(this)">
+    <img src="/images/fedoSMA.jpg" alt="Foto 2" onclick="openLightbox(this)">
+    <img src="/images/fedordormokaku.jpg" alt="Foto 3" onclick="openLightbox(this)">
+    <img src="/images/pemandudor.jpg" alt="Foto 4" onclick="openLightbox(this)">
+  </div>
+
+  <div class="gallery">
+    <img src="/images/Fedora Ariefa A (7).JPG" alt="Foto 1" onclick="openLightbox(this)">
+    <img src="/images/fedoSMA.jpg" alt="Foto 2" onclick="openLightbox(this)">
+    <img src="/images/fedordormokaku.jpg" alt="Foto 3" onclick="openLightbox(this)">
+    <img src="/images/pemandudor.jpg" alt="Foto 4" onclick="openLightbox(this)">
+  </div>
+
+
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <span class="close">&times;</span>
+    <img class="lightbox-content" id="lightboxImg">
+  </div>
+
+  <script>
+    function openLightbox(img) {
+      document.getElementById("lightbox").style.display = "block";
+      document.getElementById("lightboxImg").src = img.src;
+    }
+    function closeLightbox() {
+      document.getElementById("lightbox").style.display = "none";
+    }
+  </script>
+</body>
+</html>

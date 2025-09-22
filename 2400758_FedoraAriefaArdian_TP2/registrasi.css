@@ -1,0 +1,88 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0px 6px 20px rgba(0,0,0,0.2);
+  width: 350px;
+  text-align: left;
+  animation: fadeIn 1s ease-in-out;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+  color: #444;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  border-color: #1d2b64;
+  outline: none;
+  box-shadow: 0 0 8px rgba(29, 43, 100, 0.3);
+}
+
+.radio-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.radio-group label {
+  font-weight: normal;
+  color: #333;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: #5d3e11;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #f8cdda;
+  color: #1d2b64;
+  border: 1px solid #1d2b64;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(-20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+/* alasan saya menambahkan css pada bagian registrasi ini agar tampilan form lebih menarik dan user-friendly */
